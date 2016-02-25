@@ -62,61 +62,90 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IGS-CO-nH6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IGS-CO-nH6">
                                                     <rect key="frame" x="8" y="30" width="65" height="66"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="E8q-i6-eSP"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="OyW-pv-rVS"/>
+                                                        <constraint firstAttribute="width" constant="65" id="Sx8-eK-N54"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="xBC-Ht-kju"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Michael Moran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVF-88-C6i">
-                                                    <rect key="frame" x="81" y="30" width="113" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I have seen the future of newspapers: http://t.co/UfmWt2OTCP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-jh-l1Q">
-                                                    <rect key="frame" x="81" y="52" width="217" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="I have seen the future" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDy-jh-l1Q">
+                                                    <rect key="frame" x="81" y="69" width="166" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="14h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xky-KB-Z76">
-                                                    <rect key="frame" x="284" y="30" width="28" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@TheMichaelMoran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0y-qg-aGp">
+                                                    <rect key="frame" x="81" y="46" width="153" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.3505008013" green="0.3505008013" blue="0.3505008013" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@TheMichaelMoran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0y-qg-aGp">
-                                                    <rect key="frame" x="194" y="30" width="82" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.3505008013" green="0.3505008013" blue="0.3505008013" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-Ba-jwK">
-                                                    <rect key="frame" x="81" y="89" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofy-Ax-5Zr">
-                                                    <rect key="frame" x="139" y="89" width="42" height="21"/>
+                                                    <rect key="frame" x="128" y="89" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVb-Zb-eaC">
-                                                    <rect key="frame" x="194" y="89" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0p-e9-SDE">
-                                                    <rect key="frame" x="122" y="104" width="46" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <rect key="frame" x="100" y="85" width="30" height="30"/>
+                                                    <state key="normal" title="RT"/>
+                                                    <connections>
+                                                        <action selector="retweetPressed:" destination="1tR-hx-TgL" eventType="touchUpInside" id="HVj-E8-yyL"/>
+                                                    </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzj-86-Pfo">
+                                                    <rect key="frame" x="174" y="85" width="30" height="30"/>
+                                                    <state key="normal" title="Fav"/>
+                                                    <connections>
+                                                        <action selector="favoritePressed:" destination="1tR-hx-TgL" eventType="touchUpInside" id="5Us-F3-qfz"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kp-UZ-C2g">
+                                                    <rect key="frame" x="205" y="89" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Michael Moran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVF-88-C6i">
+                                                    <rect key="frame" x="81" y="25" width="120" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" text="14h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xky-KB-Z76">
+                                                    <rect key="frame" x="247" y="25" width="28" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.3505008013" green="0.3505008013" blue="0.3505008013" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IGS-CO-nH6" firstAttribute="top" secondItem="xWF-eG-aDN" secondAttribute="top" constant="30" id="0Rl-4B-lhU"/>
+                                                <constraint firstItem="Xky-KB-Z76" firstAttribute="top" secondItem="xWF-eG-aDN" secondAttribute="top" constant="25" id="6Uh-c2-dwB"/>
+                                                <constraint firstItem="CDy-jh-l1Q" firstAttribute="top" secondItem="W0y-qg-aGp" secondAttribute="bottom" constant="2" id="6k3-lu-CHr"/>
+                                                <constraint firstItem="IGS-CO-nH6" firstAttribute="leading" secondItem="xWF-eG-aDN" secondAttribute="leading" constant="8" id="8ml-mv-5gm"/>
+                                                <constraint firstItem="jVF-88-C6i" firstAttribute="leading" secondItem="IGS-CO-nH6" secondAttribute="trailing" constant="8" id="C1H-3P-ntH"/>
+                                                <constraint firstItem="W0y-qg-aGp" firstAttribute="top" secondItem="jVF-88-C6i" secondAttribute="bottom" id="KQt-CA-8vZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="CDy-jh-l1Q" secondAttribute="bottom" constant="52" id="Rka-zA-scu"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xky-KB-Z76" secondAttribute="trailing" constant="22" id="WXa-tE-ZLf"/>
+                                                <constraint firstAttribute="trailing" secondItem="W0y-qg-aGp" secondAttribute="trailing" constant="86" id="YoQ-xj-Ls4"/>
+                                                <constraint firstAttribute="bottom" secondItem="IGS-CO-nH6" secondAttribute="bottom" constant="46" id="aeM-P1-wQb"/>
+                                                <constraint firstItem="CDy-jh-l1Q" firstAttribute="leading" secondItem="IGS-CO-nH6" secondAttribute="trailing" constant="8" id="isf-JY-mMS"/>
+                                                <constraint firstItem="W0y-qg-aGp" firstAttribute="leading" secondItem="IGS-CO-nH6" secondAttribute="trailing" constant="8" id="mJn-4Q-sdk"/>
+                                                <constraint firstItem="jVF-88-C6i" firstAttribute="top" secondItem="xWF-eG-aDN" secondAttribute="top" constant="25" id="v6E-3O-w5F"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="favoriteButton" destination="Tzj-86-Pfo" id="NAc-JP-oP1"/>
+                                            <outlet property="favoriteLabel" destination="5kp-UZ-C2g" id="kRe-aw-rzg"/>
                                             <outlet property="profileHandle" destination="W0y-qg-aGp" id="LnM-XV-9Ry"/>
                                             <outlet property="profileName" destination="jVF-88-C6i" id="Wp0-dj-d7g"/>
                                             <outlet property="profilePicture" destination="IGS-CO-nH6" id="LpW-7z-Fax"/>
+                                            <outlet property="retweetButton" destination="m0p-e9-SDE" id="aRI-ih-FgY"/>
+                                            <outlet property="retweetLabel" destination="Ofy-Ax-5Zr" id="jqK-qn-QCe"/>
                                             <outlet property="tweetTime" destination="Xky-KB-Z76" id="6z7-uG-H3Z"/>
                                             <outlet property="userTweet" destination="CDy-jh-l1Q" id="vBJ-WZ-GFR"/>
                                         </connections>
@@ -140,6 +169,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="FqN-0f-EVA" id="LVY-dD-c9N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mav-EC-QwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
