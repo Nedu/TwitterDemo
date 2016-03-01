@@ -8,6 +8,14 @@
 
 import UIKit
 
+@objc protocol TweetCellDelegate {
+    optional func replyPressed(tweetCell: TweetCell)
+    optional func retweetPressed(tweetCell: TweetCell)
+    optional func favoritePressed(tweetCell: TweetCell)
+    optional func profilePicturePressed(tweetCell: TweetCell)
+}
+
+
 class TweetCell: UITableViewCell {
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var profileName: UILabel!
@@ -38,6 +46,7 @@ class TweetCell: UITableViewCell {
         }
     }
     @IBAction func favoritePressed(sender: AnyObject) {
+        TwitterClient.sharedInstance.like(tweet.id!)
         tweet.favorited = true
         tweet.favoritesCount += 1
         favoriteLabel.text = "\((tweet.favoritesCount))"
@@ -45,11 +54,11 @@ class TweetCell: UITableViewCell {
     }
     
     @IBAction func retweetPressed(sender: AnyObject) {
+        TwitterClient.sharedInstance.retweet(tweet.id!)
         tweet.retweeted = true
         tweet.retweetCount += 1
         retweetLabel.text = "\((tweet.retweetCount))"
-        retweetButton.enabled = false
-    }
+        retweetButton.enabled = false    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
