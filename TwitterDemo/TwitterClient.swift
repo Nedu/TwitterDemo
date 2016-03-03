@@ -73,6 +73,32 @@ class TwitterClient: BDBOAuth1SessionManager {
         })
     }
     
+    func compose(text: String){
+        POST("1.1/statuses/update.json", parameters: ["status": text], success: { (operation: NSURLSessionDataTask!, response: AnyObject?) -> Void in
+            
+            print("hellooo")
+        },
+            failure: { (operation: NSURLSessionDataTask?, error: NSError!) -> Void in
+                print(error)
+        }
+        )
+    }
+    
+    func userTimeLine(success: ([Tweet]) -> (), failure: (NSError) -> ()) {
+        
+        GET("1.1/statuses/user_timeline.json?screen_name=kidflashwallace", parameters: nil,
+            progress: nil, success: { (task: NSURLSessionDataTask, response:
+                AnyObject?) -> Void in
+                let dictionaries = response as! [NSDictionary]
+                let tweets = Tweet.tweetsWithArray(dictionaries)
+                
+                success(tweets)
+            }, failure: { (task: NSURLSessionDataTask?, error: NSError) -> Void in
+                failure(error)
+        })
+    }
+
+    
     func currentAccount(success: (User) -> (), failure: (NSError) -> ()) {
         GET("1.1/account/verify_credentials.json", parameters: nil,
             progress: nil, success: {(task: NSURLSessionDataTask, response:

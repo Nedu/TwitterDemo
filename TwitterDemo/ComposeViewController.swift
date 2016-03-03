@@ -10,6 +10,7 @@ import UIKit
 
 class ComposeViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,10 @@ class ComposeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onTweet(sender: AnyObject) {
+        TwitterClient.sharedInstance.compose(textView.text)
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 
     /*
     // MARK: - Navigation
