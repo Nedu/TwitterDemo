@@ -33,8 +33,8 @@ class DetailViewController: UIViewController {
         profileHandle.text = "@\(tweet.user!.screenname!)"
         retweetLabel.text = "\((tweet.retweetCount))"
         favoriteLabel.text = "\((tweet.favoritesCount))"
-        favorite.imageView!.image = UIImage(named: "likeIcon")
-        retweet.imageView!.image = UIImage(named: "retweetIcon")
+        //favorite.imageView!.image = UIImage(named: "like-action-off")
+        //retweet.imageView!.image = UIImage(named: "retweet-action-on-green")
 
         // Do any additional setup after loading the view.
     }
@@ -58,14 +58,18 @@ class DetailViewController: UIViewController {
         favoriteLabel.text = "\((tweet.favoritesCount))"
         favorite.enabled = false
     }
-          /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let replyViewController = segue.destinationViewController as! ReplyViewController
+        replyViewController.id = tweet.id
+        replyViewController.username = tweet.user?.screenname
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

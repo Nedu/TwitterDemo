@@ -11,6 +11,7 @@
 		9E4F4AB71C852CF50089116F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F4AB61C852CF50089116F /* DetailViewController.swift */; };
 		9E4F4AB91C8537B90089116F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F4AB81C8537B90089116F /* ProfileViewController.swift */; };
 		9E4F4ABB1C8538AE0089116F /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F4ABA1C8538AE0089116F /* ComposeViewController.swift */; };
+		9E4F4ABD1C87DC8A0089116F /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F4ABC1C87DC8A0089116F /* ReplyViewController.swift */; };
 		9E99B8751C7969E7001076D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E99B8741C7969E7001076D6 /* AppDelegate.swift */; };
 		9E99B87A1C7969E7001076D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E99B8781C7969E7001076D6 /* Main.storyboard */; };
 		9E99B87C1C7969E7001076D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E99B87B1C7969E7001076D6 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		9E4F4AB61C852CF50089116F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9E4F4AB81C8537B90089116F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9E4F4ABA1C8538AE0089116F /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		9E4F4ABC1C87DC8A0089116F /* ReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
 		9E99B8711C7969E7001076D6 /* TwitterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E99B8741C7969E7001076D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E99B8791C7969E7001076D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				9E4F4AB61C852CF50089116F /* DetailViewController.swift */,
 				9E4F4AB81C8537B90089116F /* ProfileViewController.swift */,
 				9E4F4ABA1C8538AE0089116F /* ComposeViewController.swift */,
+				9E4F4ABC1C87DC8A0089116F /* ReplyViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				9E4F4AB91C8537B90089116F /* ProfileViewController.swift in Sources */,
 				9E99B8751C7969E7001076D6 /* AppDelegate.swift in Sources */,
 				9E4F4AB71C852CF50089116F /* DetailViewController.swift in Sources */,
+				9E4F4ABD1C87DC8A0089116F /* ReplyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

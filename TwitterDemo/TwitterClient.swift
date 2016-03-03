@@ -124,6 +124,18 @@ class TwitterClient: BDBOAuth1SessionManager {
         })
     }
     
+    func reply(text: String, id: String){
+        POST("1.1/statuses/update.json", parameters: ["status": text, "in_reply_to_status_id" : id], success: { (operation: NSURLSessionDataTask!, response: AnyObject?) -> Void in
+            
+            print("hellooo")
+            },
+            failure: { (operation: NSURLSessionDataTask?, error: NSError!) -> Void in
+                print(error)
+            }
+        )
+    }
+
+    
     func like(id: String) {
         POST("1.1/favorites/create.json?id=\(id)", parameters: nil, progress: { (progress) -> Void in
             }, success: { (operation: NSURLSessionDataTask!, response: AnyObject?) -> Void in
